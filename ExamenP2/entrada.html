@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Sistema de clasificacion de peliculas</title>
+    </head>
+    <body>
+        <h1>Formulario: Lista de peliculas</h1>
+        <p>Introduce al menos <b>4 peliculas</b> con titulo, año y duracion (min).</p>
+        <form action="clasificar.php" method="post">
+            <table border="1" >
+                <tr>
+                    <th><label for="titulo">Titulo</label></th>
+                    <th><label for="anio">Año</label></th>
+                    <th><label for="duracion">Duracion</label></th>
+                </tr>
+                <tr>
+                   <td><input type="text" name="titulo[]" required></td>
+                   <td><input type="number" name="anio[]" required></td>
+                   <td><input type="number" name="duracion[]" required></td>
+                </tr>
+                <tr>
+                   <td><input type="text" name="titulo[]" required></td>
+                   <td><input type="number" name="anio[]" required></td>
+                   <td><input type="number" name="duracion[]" required></td>
+                </tr>
+                <tr>
+                   <td><input type="text" name="titulo[]" ></td>
+                   <td><input type="number" name="anio[]" ></td>
+                   <td><input type="number" name="duracion[]" ></td>
+                </tr>
+                <tr>
+                   <td><input type="text" name="titulo[]" ></td>
+                   <td><input type="number" name="anio[]" ></td>
+                   <td><input type="number" name="duracion[]" ></td>
+                </tr>
+            </table><br>
+            <input type="submit" value="Clasificar peliculas">
+        </form>
+    </body>
+</html>
