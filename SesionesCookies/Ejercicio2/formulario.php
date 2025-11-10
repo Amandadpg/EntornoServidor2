@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>
-        <meta charset="UTf-8">
+        <meta charset="UTF-8">
         <title>Formulario de registro</title>
     </head>
     <body>
@@ -21,22 +21,22 @@
         <h1>Formulario de registro</h1>
         <form action="validacion.php" method="post">
             <label for="nombre">Nombre:</label>
-            <input type="text" name="nombre" id="nombre"><br><br>
+            <input type="text" name="nombre"><br><br>
             
             <label for="apellidos">Apellidos:</label>
-            <input type="text" name="apellidos" id="apellidos"><br><br>
+            <input type="text" name="apellidos"><br><br>
             
             <label for="direccion">Direccion:</label>
-            <input type="text" name="direccion" id="direccion"><br><br>
+            <input type="text" name="direccion"><br><br>
             
             <label for="poblacion">Poblacion:</label>
-            <input type="text" name="poblacion" id="poblacion" ><br><br>
+            <input type="text" name="poblacion" ><br><br>
             
             <label for="genero">Genero:</label><br>
             <label for="masculino">Masculino:</label>
-            <input type="radio" name="masculino" id="genero" value ="Masculino"><br>
+            <input type="radio" name="genero" value ="Masculino"><br>
             <label for="femenino">Femenino:</label>
-            <input type="radio" name="femenino" id="genero" value ="femenino"><br><br>
+            <input type="radio" name="genero" value ="Femenino"><br><br>
             
             <label for="condiciones">He leido y aceptado las condiciones:</label>
             <input type="checkbox" name="acepto"><br><br>
