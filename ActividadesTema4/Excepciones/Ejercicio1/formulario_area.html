@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTf-8">
+        <title>Registro de Errores en un Archivo de Log</title>
+    </head>
+    <body>
+        <h1>Registro de Errores en un Archivo de Log</h1>
+        <p>Selecciona entre estas dos figuras.</p>
+        
+        <form action="procesar_area.php" method="POST">
+            <select id="areas">
+                <option value="AreaTriangulo">Area del triangulo</option>
+                <option value="AreaCirculo">Area del circulo</option>
+            </select><br><br>
+
+            <p>Introduce los datos necesario segun tu figura:</p>
+            <label for="base">Base:</label>
+            <input type="number" name="base" id="base"/><br><br>
+            <label for="altura">Altura:</label>
+            <input type="number" name="altura" id="altura"/><br><br>
+            <label for="radio">Radio:</label>
+            <input type="number" name="radio" id="radio"/><br><br>
+
+        <input type="submit" value="Calcular">
+    </form>
+    </body>
+
+</html>
