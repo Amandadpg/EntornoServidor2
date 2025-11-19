@@ -22,7 +22,7 @@
     $cine = $_COOKIE['cine'];
     
 
-
+    $_SESSION['cine'] = $cine;
     ?>
     <h1>Selecciona un asiento</h1>
     <table border='1'>
