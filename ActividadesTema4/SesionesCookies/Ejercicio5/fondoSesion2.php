@@ -14,7 +14,7 @@ if(isset($_POST['reset'])){
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Fondo con Sesión - Página 2</title>
+    <title>Fondo con Sesión</title>
 </head>
 <body style="background-color: <?php echo $color; ?>;">
     <h2>Esta es la segunda página</h2>

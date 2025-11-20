@@ -1,24 +1,24 @@
 <?php
-session_start();
+    session_start();
 
-// Color por defecto
-$color = "white";
+    // Color por defecto
+    $color = "white";
 
-// Si se envía el formulario, actualizar color en sesión
-if(isset($_POST['color'])){
-    $color = $_POST['color'];
-    $_SESSION['color'] = $color;
-}
-// Si ya hay color en sesión, usarlo
-else if(isset($_SESSION['color'])){
-    $color = $_SESSION['color'];
+    // Si se envía el formulario, actualizar color en sesión
+    if(isset($_POST['color'])){
+        $color = $_POST['color'];
+        $_SESSION['color'] = $color;
+    }
+    // Si ya hay color en sesión, usarlo
+    else if(isset($_SESSION['color'])){
+        $color = $_SESSION['color'];
 }
 ?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Fondo con Sesión - Página 1</title>
+    <title>Fondo con Sesión</title>
 </head>
 <body style="background-color: <?php echo $color; ?>;">
     <h2>Selecciona un color de fondo:</h2>
