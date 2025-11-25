@@ -13,6 +13,7 @@ if (!$usuario || !$asiento || !$cine) {
     exit();
 }
 
+//http://localhost/proyecto/entrada.php?usuario=Antonio&asiento=1&cine=los_arcos
 //Matriz de verificaciones
 $entradas_validas = [
     'Antonio' => ['asiento' => '1', 'cine' => 'los_arcos'],
@@ -25,7 +26,6 @@ $entradas_validas = [
 if (isset($entradas_validas[$usuario])) {
     $valido = $entradas_validas[$usuario];
     if ($valido['asiento'] === $asiento && $valido['cine'] === $cine) {
-        // Entrada correcta
         echo "<h1>Entrada válida</h1>";
         echo "<p>Usuario: $usuario</p>";
         echo "<p>Cine: $cine</p>";

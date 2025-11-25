@@ -1,30 +1,3 @@
-<?php
-session_start();
-
-$pista = "";
-$mensaje = "";
-
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $respuesta = trim($_POST["respuesta"]);
-    
-    if ($respuesta == "1441") {
-        $_SESSION["prueba1_superada"] = true;
-        header("Location: prueba2.php");
-        exit();
-    } else {
-        $mensaje = "Esa no es la fecha correcta. Inténtalo de nuevo.";
-        if (isset($_POST["pista"])) {
-            $pista = "💡 Pista: La feria de Mairena nació hace muchos siglos, como un mercado de ganado.";
-        }
-    }
-}
-//Primera prueba:se encuentran a la victima en un callejon entre caseta y caseta en la primera calle de nuestra feria, justo al lado de la victica aparece 
-//un folleto en el cual explica la historia de evolucion de la feria, pero hay una fecha rodeada por el asesino(1441, 1960, 1982, 2025),
-// la fecha rodeada es la que se celebro la feria por primera vez
-//¿Sabes cual es este numero?, Tiene que decir que fue en 11:44, Pista: Los dos primeros numeros son 11:__
-//Esa es la hora se murio ya que el asesino sabia cuanto duraba el veneno en hacer efecto
-?>
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -70,7 +43,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <button type="submit" name="prueba1" class="boton-jugar">Id a la siguiente prueba</button>
         </form>
 
-        <p class="mensaje"><?= $mensaje ?></p>
+        <p class="mensaje-error"><?= $mensajeError ?></p>
+        <p class="mensaje-bueno"><?= $mensajeBueno ?></p>
+        <!-- Va a ver un mensaje de error y un mensaje normal en todos -->
+
+        <!-- Muy bien hecho, los policias llegaron a la conclusion que esos numeros eran la hora de la muerte de la victima (11:44) -->
         <p class="pista"><?= $pista ?></p>
     </div>
 </body>
