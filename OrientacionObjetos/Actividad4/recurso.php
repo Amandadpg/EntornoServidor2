@@ -1,4 +1,5 @@
 <?php
+namespace grtic;
 
 class Recurso {
     private string $nombre;
