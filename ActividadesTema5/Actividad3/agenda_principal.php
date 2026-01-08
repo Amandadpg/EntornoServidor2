@@ -9,6 +9,7 @@ $contactos = $agenda->listar();
 <head>
 <meta charset="UTF-8">
 <title>Agenda con Clases</title>
+<link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
     <?php if (isset($_GET['mensaje'])): ?>
